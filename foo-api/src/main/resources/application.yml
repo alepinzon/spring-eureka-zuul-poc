@@ -1,6 +1,13 @@
 spring:
   application:
     name: foo-api
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
 server.port: 0
 eureka:
   client:
@@ -8,3 +15,5 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     preferIpAddress: true
+
+
